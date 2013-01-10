@@ -1,0 +1,12 @@
+<h1>Hello Articles Are Still Being Made!</h1>
+
+		<%	@articles.each do |article| %>
+		<%= article.title %>
+		<%= article.body %>
+
+		<%=link_to article.title, article_path(article) %>
+
+
+		<% end %>
+
+		<%= link_to "Create An Article", new_article_path %>
